@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michigan online store</title>
+    <link rel="stylesheet" href="e-commerce.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="head">Michigan Store</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search products, brands, and categories">
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="icons">
+                <ion-icon name="person-outline"></ion-icon>
+                <ion-icon name="cart-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Add the result area below the header -->
+        <div class="result">
+            <?php include "database.php"; ?>
+           <span id="resultMessage"></span>
+        </div>
+    <nav>
+        <div class="container">
+           <div class="categories">
+            <div class="category-item">
+                <h3>men</h3>
+                <ul>
+                    <li><a href="#">shirts</a></li>
+                    <li><a href="#">shorts</a></li>
+                    <li><a href="#">jackets</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">pants</a></li>
+                </ul>
+            </div>
+            <div class="category-item">
+                <h3>Ladies</h3>
+                <ul>
+                    <li><a href="#">perfumes</a></li>
+                    <li><a href="#">party wears</a></li>
+                    <li><a href="#">cold weather</a></li>
+                    <li><a href="#">celebrity shoes</a></li>
+                    <li><a href="#">sun glasses</a></li>
+                </ul>
+            </div>
+            <div class="category-item">
+                <h3>body wear</h3>
+                <ul>
+                    <li><a href="#">shirts</a></li>
+                    <li><a href="#">shorts</a></li>
+                    <li><a href="#">jackets</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">pants</a></li>
+                </ul>
+            </div>
+            <div class="category-item">
+                <h3>Electronics</h3>
+                <ul>
+                    <li><a href="#">head sets</a></li>
+                    <li><a href="#">speakers</a></li>
+                    <li><a href="#">phones</a></li>
+                    <li><a href="#">blender</a></li>
+                    <li><a href="#">smart bulbs</a></li>
+                </ul>
+            </div>
+            <div class="category-item">
+                <h3>house appliances</h3>
+                <ul>
+                    <li><a href="#">washer machines</a></li>
+                    <li><a href="#">fridges</a></li>
+                    <li><a href="#"> utensils</a></li>
+                    <li><a href="#">security camera</a></li>
+                    <li><a href="#">matress</a></li>
+                </ul>
+            </div>
+            <div class="category-item">
+                <h3>furniture</h3>
+                <ul>
+                    <li><a href="#">beds</a></li>
+                    <li><a href="#">dinning table</a></li>
+                    <li><a href="#">kitchen cabinet</a></li>
+                    <li><a href="#">wardrobe</a></li>
+                    <li><a href="#">work table</a></li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </nav>
+    <div id="overlay" class="overlay hidden">
+        <div class="banner">
+            <ion-icon id="close-icon" name="close-outline"></ion-icon>
+            <div class="content">
+                <form action="googlesheets.com" method="get">
+                    <h3 class="subscribe">Subscribe to our weekly newsletter</h3>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="doe23@gmail.com">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+     
+    <div class="featured_products">
+        <div class="new_arrivals">
+            <div class="classic">
+                <div class="product-image">
+                    <h4>A Classic Cooking Microwave</h4>
+                    <img src="/src/esources/img/img1.png" alt="Cooking Microwave" class="new" width="80%">
+                    <div class="product-desc">
+                        <p>A classic and unique microwave<br>forget smoke and undetermined cooking conditions</p>
+                        <button><a href="#">Add to Cart</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="classic">
+                <div class="product-image">
+                    <h4>A Classic Cooking Microwave</h4>
+                    <img src="/src/esources/img/img1.png" alt="Cooking Microwave" class="new" width="80%">
+                    <div class="product-desc">
+                        <p>A classic and unique microwave<br>forget smoke and undetermined cooking conditions</p>
+                        <button><a href="#">Add to Cart</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="classic">
+                <div class="product-image">
+                    <h4>A Classic Cooking Microwave</h4>
+                    <img src="/src/esources/img/img1.png" alt="Cooking Microwave" class="new" width="80%">
+                    <div class="product-desc">
+                        <p>A classic and unique microwave<br>forget smoke and undetermined cooking conditions</p>
+                        <button><a href="#">Add to Cart</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="classic">
+                <div class="product-image">
+                    <h4>A Classic Cooking Microwave</h4>
+                    <img src="/src/esources/img/img1.png" alt="Cooking Microwave" class="new" width="80%">
+                    <div class="product-desc">
+                        <p>A classic and unique microwave<br>forget smoke and undetermined cooking conditions</p>
+                        <button><a href="#">Add to Cart</a></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="carousel-container">
+        <div class="hot_offers">
+            <div class="products active">
+                <img src="/src/esources/img/assets/banner/procat3.jpg" alt="nature inside the house">
+                <div class="product_desc" width="300px">
+                    <p>Indoor plants</p>
+                    <p>nature inside the house</p>
+                    <button><a href="#">shop now</a></button>
+                </div>
+            </div>
+            <div class="products active">
+                <img src="/src/esources/img/assets/banner/banner2.jpg" alt="smooth comfortable bathing robe" width="300px">
+                <div class="product_desc">
+                    <p>smooth comfortable bathing robe</p>
+                    <button><a href="#">shop now</a></button>
+                </div>
+            </div>
+            <div class="products active">
+                <img src="/src/esources/img/assets/banner/procat1.jpg" alt="multipurpose pen. write while you spy" width="300px">
+                <div class="product_desc">
+                    <p>multipurpose pen. write while you spy</p>
+                    <button><a href="#">shop now</a></button>
+                </div>
+            </div>
+            <div class="products active">
+                <img src="/src/esources/img/assets/banner/procat2.jpg" alt="latest trending smartphones in the market" width="300px">
+                <div class="product_desc">
+                    <p>latest trending smartphones in the market</p>
+                    <button><a href="#">shop now</a></button>
+                </div>
+            </div>
+            <div class="products active">
+                <img src="/src/esources/img/assets/banner/banner1.jpg" alt="A very comfortable outdoor chair" width="300px">
+                <div class="product_desc">
+                    <p>A very comfortable outdoor chair</p>
+                    <button><a href="#">shop now</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+   
+    <!--
+        DEALS
+    -->
+    <div class="container">
+        <div class="clothes_deals carousel">
+            <h3 class="elec">Shop Clothes</h3>
+            <div class="carousel-inner">
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/apparel1.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best designer clothes</p>
+                    </div>
+                </div>
+                
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/apparel2.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best desighner clothes</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/apparel3.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best desighner clothes</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/apparel4.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best desighner clothes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="electronics carousel">
+            <h3 class="elec">Shop Electronics</h3>
+            <div class="carousel-inner">
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/electronic1.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best electronics</p>
+                    </div>
+                </div>
+                <!-- Repeat the structure for other electronics items -->
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/electronic2.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best electronics</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/electronic3.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best electronics</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="/src/esources/img/assets/products/electronic4.jpg" alt="" height="500" width="300">
+                    <div class="product_desc">
+                        <p>Best electronics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Chat with Us</a>
+            <a href="#">Shipping and Delivery</a>
+            <a href="#">Pick Up Points</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Become a Michigan Store Vendor</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Help Center</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+        </div>
+        <p>&copy; Michigan Products. All Rights Reserved</p>
+    </footer>
+    
+    <script src="e-commerce.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
